@@ -98,26 +98,26 @@
   color: var(--text-secondary);
 }
 
-/* Hero Background Animation - More Visible */
+/* Hero Background Animation - Much More Visible */
 @keyframes float {
   0%, 100% { 
     transform: translateY(0px) rotate(0deg) scale(1); 
-    opacity: 0.15; 
+    opacity: 0.25; 
   }
   50% { 
     transform: translateY(-30px) rotate(8deg) scale(1.1); 
-    opacity: 0.25; 
+    opacity: 0.4; 
   }
 }
 
 @keyframes floatReverse {
   0%, 100% { 
     transform: translateY(0px) rotate(0deg) scale(1); 
-    opacity: 0.12; 
+    opacity: 0.22; 
   }
   50% { 
     transform: translateY(30px) rotate(-8deg) scale(1.15); 
-    opacity: 0.22; 
+    opacity: 0.35; 
   }
 }
 
@@ -131,9 +131,9 @@
   position: absolute;
   top: -20%;
   right: -5%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(186, 62, 43, 0.18) 0%, rgba(186, 62, 43, 0.08) 40%, transparent 70%);
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(186, 62, 43, 0.28) 0%, rgba(186, 62, 43, 0.12) 40%, transparent 70%);
   border-radius: 50%;
   animation: float 12s ease-in-out infinite;
   pointer-events: none;
@@ -145,9 +145,9 @@
   position: absolute;
   bottom: -25%;
   left: -8%;
-  width: 450px;
-  height: 450px;
-  background: radial-gradient(circle, rgba(186, 62, 43, 0.15) 0%, rgba(186, 62, 43, 0.06) 40%, transparent 70%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(186, 62, 43, 0.25) 0%, rgba(186, 62, 43, 0.10) 40%, transparent 70%);
   border-radius: 50%;
   animation: floatReverse 16s ease-in-out infinite;
   pointer-events: none;

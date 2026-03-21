@@ -14,7 +14,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="section-padding-small" style={{ background: '#ffffff' }}>
+    <section className="section-padding-small" style={{ background: 'var(--bg-secondary)' }}>
       <div className="container">
         <div style={{
           maxWidth: '800px',

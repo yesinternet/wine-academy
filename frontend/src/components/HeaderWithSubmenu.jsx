@@ -74,12 +74,10 @@ const HeaderWithSubmenu = () => {
                             borderLeft: '2px solid transparent'
                           }}
                           onMouseEnter={(e) => {
-                            e.currentTarget.style.background = '#fffef2';
                             e.currentTarget.style.borderLeftColor = 'var(--accent-wine)';
                             e.currentTarget.style.color = 'var(--accent-wine)';
                           }}
                           onMouseLeave={(e) => {
-                            e.currentTarget.style.background = 'transparent';
                             e.currentTarget.style.borderLeftColor = 'transparent';
                             e.currentTarget.style.color = 'var(--text-primary)';
                           }}
