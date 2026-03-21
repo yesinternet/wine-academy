@@ -1,7 +1,7 @@
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
-import Header from "@/components/Header";
+import HeaderWithSubmenu from "@/components/HeaderWithSubmenu";
 import HeroSlider from "@/components/HeroSlider";
 import FeaturesSection from "@/components/FeaturesSection";
 import Categories from "@/components/Categories";
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div style={{ background: '#ffffff' }}>
       <AgeVerification />
-      <Header />
+      <HeaderWithSubmenu />
       <HeroSlider />
       <FeaturesSection />
       <Categories />

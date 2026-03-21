@@ -75,6 +75,64 @@ export const featuredProducts = [
   }
 ];
 
+export const navigationMenu = [
+  {
+    id: 1,
+    label: "ΚΡΑΣΙ",
+    href: "#wine",
+    submenu: [
+      { label: "Λευκό Κρασί", href: "#white-wine" },
+      { label: "Ροζέ Κρασί", href: "#rose-wine" },
+      { label: "Κόκκινο Κρασί", href: "#red-wine" },
+      { label: "Γλυκό Κρασί - Επιδόρπιο", href: "#dessert-wine" },
+      { label: "Ενισχυμένο Κρασί - Πόρτο - Sherry", href: "#fortified-wine" },
+      { label: "Αφρώδη - Σαμπάνια", href: "#sparkling-wine" }
+    ]
+  },
+  {
+    id: 2,
+    label: "DELICATESSEN",
+    href: "#deli",
+    submenu: []
+  },
+  {
+    id: 3,
+    label: "ΠΟΤΟ",
+    href: "#spirits",
+    submenu: [
+      { label: "Ούίσκι", href: "#whisky" },
+      { label: "Βότκα", href: "#vodka" },
+      { label: "Ρούμι - Cachaca", href: "#rum" },
+      { label: "Τεκίλα - Mezcal", href: "#tequila" },
+      { label: "Τζιν", href: "#gin" },
+      { label: "Κονιάκ - Μπράντυ", href: "#cognac" },
+      { label: "ΜΕΤΑΞΑ", href: "#metaxa" },
+      { label: "Βερμούτ - Aperitivo", href: "#vermouth" },
+      { label: "Λικέρ", href: "#liqueur" },
+      { label: "Bitters", href: "#bitters" },
+      { label: "Για Κοκτέιλ", href: "#cocktails" }
+    ]
+  },
+  {
+    id: 4,
+    label: "ΑΠΟΣΤΑΓΜΑ",
+    href: "#distillates",
+    submenu: [
+      { label: "Ούζο", href: "#ouzo" },
+      { label: "Τσίπουρο", href: "#tsipouro" },
+      { label: "Grappa", href: "#grappa" },
+      { label: "Sake", href: "#sake" },
+      { label: "Άλλα Αποστάγματα", href: "#other-distillates" }
+    ]
+  },
+  {
+    id: 5,
+    label: "ΣΧΕΤΙΚΑ",
+    href: "#about",
+    submenu: []
+  }
+];
+
 export const categories = [
   {
     id: 1,

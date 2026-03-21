@@ -32,7 +32,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <section className="section-padding" style={{ background: '#ffffff', position: 'relative' }}>
+    <section className="section-padding hero-animated-bg" style={{ background: '#ffffff', position: 'relative' }}>
       <div className="container">
         <div className="grid-two-column">
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '32px' }}>

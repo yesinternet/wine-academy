@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Truck, Gift, Phone } from 'lucide-react';
 import { features } from '../data/mock';
 
@@ -9,37 +9,47 @@ const getIcon = (iconName) => {
     Phone: Phone
   };
   const Icon = icons[iconName];
-  return Icon ? <Icon size={32} strokeWidth={1.5} /> : null;
+  return Icon ? <Icon size={40} strokeWidth={1.5} /> : null;
 };
 
 const FeaturesSection = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   return (
-    <section className="section-padding-small" style={{ background: 'var(--bg-secondary)' }}>
+    <section className="section-padding-small" style={{ background: 'var(--bg-secondary)', position: 'relative' }}>
       <div className="container">
         <div style={{ 
           display: 'grid', 
           gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : 'repeat(3, 1fr)',
-          gap: '48px'
+          gap: '32px'
         }}>
-          {features.map((feature) => (
+          {features.map((feature, index) => (
             <div 
               key={feature.id}
               style={{
                 textAlign: 'center',
-                padding: '32px 24px',
+                padding: '48px 32px',
                 background: '#ffffff',
-                transition: 'transform 0.2s ease',
+                transition: 'all 0.3s ease',
+                transform: hoveredIndex === index ? 'translateY(-8px)' : 'translateY(0)',
+                boxShadow: hoveredIndex === index ? '0 8px 30px rgba(0, 0, 0, 0.12)' : '0 2px 10px rgba(0, 0, 0, 0.04)',
+                border: `2px solid ${hoveredIndex === index ? 'var(--accent-wine)' : 'transparent'}`,
+                cursor: 'pointer'
               }}
-              className="hover-lift"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
             >
               <div style={{
-                width: '64px',
-                height: '64px',
+                width: '80px',
+                height: '80px',
                 margin: '0 auto 24px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: 'var(--text-primary)'
+                background: hoveredIndex === index ? 'var(--accent-wine)' : 'var(--bg-secondary)',
+                color: hoveredIndex === index ? '#ffffff' : 'var(--text-primary)',
+                borderRadius: '50%',
+                transition: 'all 0.3s ease'
               }}>
                 {getIcon(feature.icon)}
               </div>
