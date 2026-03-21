@@ -16,7 +16,7 @@ const AgeVerification = () => {
       localStorage.setItem('ageVerified', 'true');
       setIsOpen(false);
     } else {
-      alert('You must be 21 or older to access this site.');
+      alert('Πρέπει να είστε 18 ετών ή μεγαλύτεροι για να αποκτήσετε πρόσβαση σε αυτόν τον ιστότοπο.');
     }
   };
 
@@ -37,7 +37,7 @@ const AgeVerification = () => {
       padding: '20px'
     }}>
       <div style={{
-        background: 'var(--bg-primary)',
+        background: '#ffffff',
         maxWidth: '500px',
         width: '100%',
         padding: '48px',
@@ -51,13 +51,13 @@ const AgeVerification = () => {
           style={{ height: '60px', width: 'auto', margin: '0 auto 32px' }}
         />
         <h2 className="hero-medium" style={{ marginBottom: '16px' }}>
-          Welcome to Wine Academy
+          Καλώς ήρθατε στη Wine Academy
         </h2>
         <p className="body-large" style={{ 
           color: 'var(--text-secondary)', 
           marginBottom: '32px'
         }}>
-          To visit our site, you must be of legal drinking age in your country of residence.
+          Για να επισκεφθείτε τον ιστότοπό μας, πρέπει να έχετε συμπληρώσει τη νόμιμη ηλικία κατανάλωσης αλκοόλ στη χώρα κατοικίας σας.
         </p>
         <p className="body-regular" style={{ 
           color: 'var(--text-primary)', 
@@ -65,7 +65,7 @@ const AgeVerification = () => {
           fontWeight: 700,
           fontFamily: "'Suisse Medium', sans-serif"
         }}>
-          Are you 21 years or older?
+          Είστε 18 ετών ή μεγαλύτεροι;
         </p>
         <div style={{ 
           display: 'flex', 
@@ -78,7 +78,7 @@ const AgeVerification = () => {
             className="btn-primary"
             style={{ minWidth: '150px' }}
           >
-            Yes, I am
+            Ναι, είμαι
           </button>
           <button 
             onClick={() => handleVerify(false)}
@@ -89,14 +89,14 @@ const AgeVerification = () => {
               color: 'var(--text-primary)'
             }}
           >
-            No, I'm not
+            Όχι, δεν είμαι
           </button>
         </div>
         <p className="body-small" style={{ 
           color: 'var(--text-light)', 
           marginTop: '32px'
         }}>
-          By entering this site, you agree to our Terms & Conditions
+          Εισερχόμενοι σε αυτόν τον ιστότοπο, συμφωνείτε με τους Όρους & Προϋποθέσεις μας
         </p>
       </div>
     </div>

@@ -1,99 +1,137 @@
-# Wine Academy E-Commerce Homepage - Product Requirements Document
+# Wine Academy E-Commerce Homepage - Product Requirements Document (UPDATED)
 
 ## Project Overview
-**Project Name:** Wine Academy Homepage  
+**Project Name:** Wine Academy Greek E-shop Homepage  
 **Type:** E-commerce Landing Page  
-**Target Audience:** Wine enthusiasts, spirit collectors, and gourmet food lovers  
+**Language:** Greek (Ελληνικά)  
+**Target Audience:** Greek wine enthusiasts, spirit collectors, and gourmet food lovers  
 **Brand Positioning:** Approachable & educational, yet sophisticated & refined  
-**Date Created:** December 2025
+**Date Updated:** December 2025
 
 ## Problem Statement
-Build an elegant and modern homepage for Wine Academy, an online store selling wine, whisky, liquors, and deli products. The homepage should balance approachability with sophistication while emphasizing education and curation.
-
-## User Personas
-1. **Wine Enthusiast (Sophie)** - Learning about wines, seeking guidance on selection
-2. **Whisky Collector (James)** - Looking for rare and premium spirits
-3. **Culinary Professional (Maria)** - Seeking authentic artisan products for pairings
-
-## Core Requirements (Static)
-- Luxury minimalist design system (premium-commerce guidelines)
-- Warm neutral color palette (#fffef2, #f6f5e8, #333333)
-- Sharp rectangular buttons (0px border radius)
-- Typography: Suisse Regular/Medium font family
-- Age verification modal (21+ requirement)
-- Full responsive design (desktop, tablet, mobile)
-- Mock data implementation for frontend-only phase
+Build an elegant and modern Greek-language homepage for Wine Academy, an online store selling wine, whisky, liquors, and deli products. The homepage should balance approachability with sophistication while emphasizing education and curation, with extensive use of white backgrounds for a clean, premium feel.
 
 ## What's Been Implemented ✅
-**Date:** December 2025
+**Latest Update:** December 2025 - Greek version with all enhancements
 
-### Frontend Components (Mock Data)
-1. **Header Navigation**
+### Complete Features
+1. **Header Navigation (White Background)**
    - Logo with Wine Academy branding
-   - Navigation menu: Wine, Whisky, Liquors, Deli, About
-   - Utilities: Search, Account, Shopping Cart
+   - Greek navigation: Κρασιά, Σαμπάνια, Ουίσκι, Ποτά, Ντελικατέσεν, Σχετικά
+   - Search, Account, Shopping Cart icons
    - Mobile responsive menu
 
-2. **Age Verification Modal**
-   - Appears on first visit
-   - LocalStorage persistence
-   - Legal compliance messaging
+2. **Hero Slider (3 Slides)**
+   - Auto-playing carousel with manual controls
+   - Slide navigation dots
+   - Left/right arrow navigation
+   - Greek messaging for each slide
+   - White background hero section
 
-3. **Hero Section**
-   - Two-column layout with text + image
-   - Primary CTA: "Explore Collection"
-   - Secondary CTA: "Learn More"
-   - High-quality lifestyle imagery
+3. **Features Section**
+   - 3 key services with elegant icons:
+     * Δωρεάν Μεταφορικά (Free Shipping) - Truck icon
+     * Συσκευασία Δώρου (Gift Wrapping) - Gift icon
+     * Τηλεφωνικές Παραγγελίες (Telephone Orders) - Phone icon
+   - White cards on beige background
 
-4. **Shop by Category Section**
-   - 4-column grid: Wine, Whisky, Liquors, Deli
-   - Category images, descriptions, product counts
-   - "Browse Collection" CTAs
+4. **6 Categories Showcase**
+   - Expanded from 4 to 6 categories:
+     * Κόκκινα Κρασιά (Red Wine)
+     * Λευκά Κρασιά (White Wine)
+     * Σαμπάνια (Champagne)
+     * Ουίσκι (Whisky)
+     * Ποτά & Spirits
+     * Ντελικατέσεν (Delicatessen)
+   - White product cards
+   - High-quality category images
 
-5. **Featured Products Section**
-   - 6 handpicked products with mock data
-   - Product cards: image, name, category, description, price
-   - "Add to Cart" functionality (mock)
+5. **Featured Products (White Background)**
+   - 6 products with product photography style images
+   - Wine bottles, whisky, champagne, spirits on white/light backgrounds
+   - Greek product names and descriptions
+   - Euro (€) pricing
+   - White background section
+   - Clean product cards with borders
 
 6. **Special Offers Section**
-   - 2 promotional banners
-   - Gradient overlays with discount badges
-   - "Shop Now" CTAs
+   - 2 promotional banners with Greek text
+   - Gradient overlays
+   - Discount badges
+   - "Αγοράστε Τώρα" CTAs
 
 7. **About/Educational Section**
-   - "Discover & Learn" messaging
-   - Feature list with checkmarks
-   - Educational positioning
+   - "Ανακαλύψτε & Μάθετε" (Discover & Learn)
+   - Educational features in Greek
+   - Two-column layout with imagery
 
-8. **Testimonials Section**
-   - 3 customer reviews
+8. **Testimonials Slider**
+   - 6 customer reviews (doubled from 3)
+   - Auto-playing carousel
+   - Shows 3 testimonials at a time
+   - Navigation arrows and dots
+   - Greek names and testimonials
    - 5-star ratings
-   - Name and role attribution
 
-9. **Newsletter Signup**
-   - Email capture form
-   - Toast notification on submission (mock)
-   - Centered, clean design
+9. **Blog Section (NEW)**
+   - 3 blog posts with Greek titles
+   - Categories and dates
+   - Blog post images (wine culture, vineyards)
+   - "Διαβάστε Περισσότερα" CTAs
+   - White background
 
-10. **Footer**
-    - Company info with logo
-    - Shop, Customer Service, Contact sections
+10. **Newsletter Signup**
+    - Greek form with "Εγγραφή" button
+    - Email capture
+    - Toast notification in Greek
+    - Beige background section
+
+11. **Footer (White Background)**
+    - Company info in Greek
+    - 4-column layout: Αγορά, Εξυπηρέτηση Πελατών, Επικοινωνία
+    - Greek contact details (Athens address, Greek phone)
     - Social media links
-    - Legal disclaimer (21+ drinking age)
+    - Legal disclaimer (18+ in Greece)
+    - White background
 
-### Design System Implementation
-- All CSS variables for luxury minimalist theme
-- Hover effects and micro-interactions
-- Sharp 0px border radius (no rounding)
-- Generous whitespace (80-120px section padding)
-- Warm neutral backgrounds
-- Clean typography hierarchy
+12. **Age Verification Modal**
+    - Greek messaging
+    - "Είστε 18 ετών ή μεγαλύτεροι;" (Are you 18 or older?)
+    - "Ναι, είμαι" / "Όχι, δεν είμαι" buttons
+    - LocalStorage persistence
 
-### Mock Data Structure
-- `mock.js` with 6 featured products
-- 4 category definitions
-- 3 testimonials
+### Design Implementation
+- **White Background Strategy:**
+  * Header: Pure white (#ffffff)
+  * Hero Slider: White background
+  * Featured Products: White background
+  * Blog Section: White background
+  * Footer: White background
+  * Product Cards: White with light borders
+  * Features Cards: White on beige
+  
+- **Product Photography:**
+  * Wine bottles with white/light backgrounds
+  * Champagne bottles on clean backgrounds
+  * Whisky product shots
+  * Professional e-commerce style imagery
+
+- **All Content Translated to Greek:**
+  * Navigation menus
+  * Headlines and copy
+  * Button text
+  * Form placeholders
+  * Error messages
+  * Footer content
+
+### Mock Data (Greek Version)
+- 3 hero slides
+- 6 categories (expanded)
+- 6 featured products
+- 3 features/services
+- 6 testimonials (doubled)
 - 2 special offers
+- 3 blog posts
 - Educational content
 
 ## Architecture
@@ -101,54 +139,36 @@ Build an elegant and modern homepage for Wine Academy, an online store selling w
 - Frontend: React + Tailwind CSS + Shadcn UI
 - Backend: FastAPI (not yet implemented)
 - Database: MongoDB (not yet implemented)
+- Language: Greek (Ελληνικά)
 
-**Current State:** Frontend-only with mock data
+**Current State:** Frontend-only with Greek mock data
 
-## Prioritized Backlog
-
-### P0 - Backend Development (Next Phase)
-- [ ] Product catalog API endpoints
-- [ ] Category management system
-- [ ] Shopping cart functionality
-- [ ] User authentication
-- [ ] Newsletter subscription storage
-- [ ] Order management system
-
-### P1 - E-commerce Features
-- [ ] Product detail pages
-- [ ] Filtering and search functionality
-- [ ] Shopping cart with persistence
-- [ ] Checkout flow
-- [ ] Payment integration (Stripe)
-- [ ] User account dashboard
-
-### P2 - Enhanced Features
-- [ ] Product reviews and ratings
-- [ ] Wine/whisky recommendations engine
-- [ ] Inventory management
-- [ ] Admin panel for content management
-- [ ] Email marketing integration
-- [ ] Analytics and tracking
-
-## Next Tasks
-1. ✅ Frontend homepage with mock data - COMPLETED
-2. User approval to proceed with backend development
-3. Define API contracts and database schemas
-4. Implement backend endpoints
-5. Integrate frontend with live APIs
-6. Testing and quality assurance
+## Next Action Items
+1. ✅ Greek translation - COMPLETED
+2. ✅ Hero slider implementation - COMPLETED
+3. ✅ 6 categories - COMPLETED
+4. ✅ Features section - COMPLETED
+5. ✅ Product photos with white backgrounds - COMPLETED
+6. ✅ Testimonials slider with 6 reviews - COMPLETED
+7. ✅ Blog section - COMPLETED
+8. ✅ White backgrounds for multiple sections - COMPLETED
+9. Backend API development (products, categories, cart, auth, blog, newsletter)
+10. Database schema for MongoDB
+11. Frontend-backend integration
+12. Greek language admin panel
 
 ## Technical Notes
-- All interactions functional on frontend (mock data)
-- Age verification uses localStorage
-- Newsletter form shows toast notifications
-- Buttons and links have proper hover states
-- Images optimized from Unsplash/Pexels
-- Design follows luxury minimalist guidelines strictly
+- All UI text in Greek (Ελληνικά)
+- Sliders use auto-play with manual controls
+- Product images: white/light background style
+- Icons from lucide-react library
+- Responsive design maintained
+- Age verification set to 18+ (Greek law)
+- Currency: Euro (€)
 
-## Success Metrics (To Be Implemented)
-- Conversion rate for newsletter signups
-- Category click-through rates
-- Time on page
-- Age verification completion rate
-- Mobile vs desktop traffic split
+## Future Enhancements (Post-Backend)
+- Greek content management system
+- Multi-language support (Greek/English toggle)
+- Greek SEO optimization
+- Greek payment gateways integration
+- Greek shipping providers integration

@@ -10,7 +10,7 @@ const AboutSection = () => {
           <div>
             <img 
               src={`${educationalContent.image}?auto=compress&cs=tinysrgb&w=800`}
-              alt="Wine Academy Experience"
+              alt="Wine Academy Εμπειρία"
               style={{ 
                 width: '100%', 
                 height: '500px', 

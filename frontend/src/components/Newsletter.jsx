@@ -8,13 +8,13 @@ const Newsletter = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email) {
-      toast.success('Thank you for subscribing! Check your email for a welcome offer.');
+      toast.success('Ευχαριστούμε για την εγγραφή σας! Ελέγξτε το email σας για μια προσφορά καλωσορίσματος.');
       setEmail('');
     }
   };
 
   return (
-    <section className="section-padding-small" style={{ background: 'var(--bg-primary)' }}>
+    <section className="section-padding-small" style={{ background: 'var(--bg-secondary)' }}>
       <div className="container">
         <div style={{
           maxWidth: '800px',
@@ -22,13 +22,13 @@ const Newsletter = () => {
           textAlign: 'center'
         }}>
           <h2 className="hero-medium" style={{ marginBottom: '16px' }}>
-            Join Our Community
+            Γίνετε Μέλος της Κοινότητάς μας
           </h2>
           <p className="body-large" style={{ 
             color: 'var(--text-secondary)', 
             marginBottom: '40px'
           }}>
-            Subscribe to receive exclusive offers, tasting notes, and expert recommendations
+            Εγγραφείτε για να λαμβάνετε αποκλειστικές προσφορές, σημειώσεις γευσιγνωσίας και συστάσεις ειδικών
           </p>
           <form onSubmit={handleSubmit} style={{
             display: 'flex',
@@ -39,7 +39,7 @@ const Newsletter = () => {
           }}>
             <input 
               type="email"
-              placeholder="Enter your email"
+              placeholder="Εισάγετε το email σας"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -50,7 +50,7 @@ const Newsletter = () => {
                 borderRadius: '0px',
                 fontSize: '14px',
                 fontFamily: "'Suisse Regular', sans-serif",
-                background: 'var(--bg-primary)',
+                background: '#ffffff',
                 color: 'var(--text-primary)',
                 outline: 'none',
                 transition: 'all 0.2s ease'
@@ -73,7 +73,7 @@ const Newsletter = () => {
                 gap: '8px'
               }}
             >
-              Subscribe
+              Εγγραφή
               <ArrowRight size={14} />
             </button>
           </form>

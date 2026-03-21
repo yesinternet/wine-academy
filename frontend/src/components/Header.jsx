@@ -6,7 +6,7 @@ const Header = () => {
   const [cartCount] = useState(0);
 
   return (
-    <header className="navigation-header">
+    <header className="navigation-header" style={{ background: '#ffffff' }}>
       <div className="container">
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           {/* Logo */}
@@ -21,17 +21,18 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
             <ul className="navigation-menu" style={{ display: window.innerWidth <= 1024 ? 'none' : 'flex' }}>
-              <li><a href="#wine" className="navigation-link">Wine</a></li>
-              <li><a href="#whisky" className="navigation-link">Whisky</a></li>
-              <li><a href="#liquors" className="navigation-link">Liquors</a></li>
-              <li><a href="#deli" className="navigation-link">Deli</a></li>
-              <li><a href="#about" className="navigation-link">About</a></li>
+              <li><a href="#wine" className="navigation-link">Κρασιά</a></li>
+              <li><a href="#champagne" className="navigation-link">Σαμπάνια</a></li>
+              <li><a href="#whisky" className="navigation-link">Ουίσκι</a></li>
+              <li><a href="#spirits" className="navigation-link">Ποτά</a></li>
+              <li><a href="#deli" className="navigation-link">Ντελικατέσεν</a></li>
+              <li><a href="#about" className="navigation-link">Σχετικά</a></li>
             </ul>
 
             {/* Utilities */}
             <div className="navigation-utilities">
               <button 
-                aria-label="Search"
+                aria-label="Αναζήτηση"
                 style={{ 
                   background: 'none', 
                   border: 'none', 
@@ -43,7 +44,7 @@ const Header = () => {
                 <Search size={20} />
               </button>
               <button 
-                aria-label="Account"
+                aria-label="Λογαριασμός"
                 style={{ 
                   background: 'none', 
                   border: 'none', 
@@ -55,7 +56,7 @@ const Header = () => {
                 <User size={20} />
               </button>
               <button 
-                aria-label="Shopping Cart"
+                aria-label="Καλάθι Αγορών"
                 style={{ 
                   background: 'none', 
                   border: 'none', 
@@ -72,7 +73,7 @@ const Header = () => {
                     top: '4px',
                     right: '4px',
                     background: 'var(--text-primary)',
-                    color: 'var(--bg-primary)',
+                    color: '#ffffff',
                     fontSize: '10px',
                     width: '16px',
                     height: '16px',
@@ -89,7 +90,7 @@ const Header = () => {
               {/* Mobile Menu Toggle */}
               <button 
                 className="mobile-menu-toggle"
-                aria-label="Menu"
+                aria-label="Μενού"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 style={{ 
                   background: 'none', 
@@ -116,19 +117,22 @@ const Header = () => {
           }}>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               <li style={{ marginBottom: '16px' }}>
-                <a href="#wine" className="navigation-link">Wine</a>
+                <a href="#wine" className="navigation-link">Κρασιά</a>
               </li>
               <li style={{ marginBottom: '16px' }}>
-                <a href="#whisky" className="navigation-link">Whisky</a>
+                <a href="#champagne" className="navigation-link">Σαμπάνια</a>
               </li>
               <li style={{ marginBottom: '16px' }}>
-                <a href="#liquors" className="navigation-link">Liquors</a>
+                <a href="#whisky" className="navigation-link">Ουίσκι</a>
               </li>
               <li style={{ marginBottom: '16px' }}>
-                <a href="#deli" className="navigation-link">Deli</a>
+                <a href="#spirits" className="navigation-link">Ποτά</a>
               </li>
               <li style={{ marginBottom: '16px' }}>
-                <a href="#about" className="navigation-link">About</a>
+                <a href="#deli" className="navigation-link">Ντελικατέσεν</a>
+              </li>
+              <li style={{ marginBottom: '16px' }}>
+                <a href="#about" className="navigation-link">Σχετικά</a>
               </li>
             </ul>
           </nav>

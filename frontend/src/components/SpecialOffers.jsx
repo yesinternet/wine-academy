@@ -4,12 +4,12 @@ import { ArrowRight } from 'lucide-react';
 
 const SpecialOffers = () => {
   return (
-    <section className="section-padding-small" style={{ background: 'var(--bg-primary)' }}>
+    <section className="section-padding-small" style={{ background: '#ffffff' }}>
       <div className="container">
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-          <h2 className="hero-medium">Special Offers</h2>
+          <h2 className="hero-medium">Ειδικές Προσφορές</h2>
           <p className="body-large" style={{ color: 'var(--text-secondary)', marginTop: '16px' }}>
-            Limited time selections at exceptional value
+            Περιορισμένες επιλογές σε εξαιρετική αξία
           </p>
         </div>
 
@@ -45,12 +45,12 @@ const SpecialOffers = () => {
                 right: 0,
                 background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%)',
                 padding: '48px 32px 32px',
-                color: 'var(--bg-primary)'
+                color: '#ffffff'
               }}>
                 <div style={{
                   display: 'inline-block',
                   padding: '4px 12px',
-                  background: 'var(--bg-primary)',
+                  background: '#ffffff',
                   color: 'var(--text-primary)',
                   fontSize: '12px',
                   fontWeight: 700,
@@ -59,11 +59,11 @@ const SpecialOffers = () => {
                 }}>
                   {offer.discount}
                 </div>
-                <h3 className="heading-2" style={{ color: 'var(--bg-primary)', marginBottom: '8px' }}>
+                <h3 className="heading-2" style={{ color: '#ffffff', marginBottom: '8px' }}>
                   {offer.title}
                 </h3>
                 <p className="body-regular" style={{ 
-                  color: 'var(--bg-primary)', 
+                  color: '#ffffff', 
                   opacity: 0.9,
                   marginBottom: '16px'
                 }}>
@@ -71,10 +71,10 @@ const SpecialOffers = () => {
                 </p>
                 <button 
                   className="btn-icon" 
-                  style={{ color: 'var(--bg-primary)' }}
+                  style={{ color: '#ffffff' }}
                 >
-                  Shop Now
-                  <ArrowRight size={12} style={{ color: 'var(--bg-primary)' }} />
+                  Αγοράστε Τώρα
+                  <ArrowRight size={12} style={{ color: '#ffffff' }} />
                 </button>
               </div>
             </div>

@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react'
 const Footer = () => {
   return (
     <footer style={{ 
-      background: 'var(--bg-secondary)', 
+      background: '#ffffff', 
       borderTop: '1px solid var(--border-light)'
     }}>
       <div className="container" style={{ padding: '80px 40px 40px' }}>
@@ -26,7 +26,7 @@ const Footer = () => {
               marginBottom: '20px',
               lineHeight: 1.6
             }}>
-              Curating exceptional wines, spirits, and artisan delicacies for the discerning enthusiast.
+              Επιμελούμε εξαιρετικά κρασιά, ποτά και artisan ντελικατέσεν για τον απαιτητικό γευσιγνώστη.
             </p>
             <div style={{ display: 'flex', gap: '16px' }}>
               <a href="#" aria-label="Facebook" style={{ color: 'var(--text-primary)' }}>
@@ -43,7 +43,7 @@ const Footer = () => {
 
           {/* Shop */}
           <div>
-            <h4 className="heading-3" style={{ marginBottom: '20px' }}>Shop</h4>
+            <h4 className="heading-3" style={{ marginBottom: '20px' }}>Αγορά</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               <li style={{ marginBottom: '12px' }}>
                 <a href="#wine" className="body-small" style={{ 
@@ -51,7 +51,15 @@ const Footer = () => {
                   textDecoration: 'none',
                   transition: 'color 0.2s ease'
                 }}>
-                  Wine
+                  Κρασιά
+                </a>
+              </li>
+              <li style={{ marginBottom: '12px' }}>
+                <a href="#champagne" className="body-small" style={{ 
+                  color: 'var(--text-secondary)', 
+                  textDecoration: 'none' 
+                }}>
+                  Σαμπάνια
                 </a>
               </li>
               <li style={{ marginBottom: '12px' }}>
@@ -59,15 +67,15 @@ const Footer = () => {
                   color: 'var(--text-secondary)', 
                   textDecoration: 'none' 
                 }}>
-                  Whisky
+                  Ουίσκι
                 </a>
               </li>
               <li style={{ marginBottom: '12px' }}>
-                <a href="#liquors" className="body-small" style={{ 
+                <a href="#spirits" className="body-small" style={{ 
                   color: 'var(--text-secondary)', 
                   textDecoration: 'none' 
                 }}>
-                  Liquors
+                  Ποτά
                 </a>
               </li>
               <li style={{ marginBottom: '12px' }}>
@@ -75,7 +83,7 @@ const Footer = () => {
                   color: 'var(--text-secondary)', 
                   textDecoration: 'none' 
                 }}>
-                  Deli
+                  Ντελικατέσεν
                 </a>
               </li>
             </ul>
@@ -83,14 +91,14 @@ const Footer = () => {
 
           {/* Customer Service */}
           <div>
-            <h4 className="heading-3" style={{ marginBottom: '20px' }}>Customer Service</h4>
+            <h4 className="heading-3" style={{ marginBottom: '20px' }}>Εξυπηρέτηση Πελατών</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               <li style={{ marginBottom: '12px' }}>
                 <a href="#" className="body-small" style={{ 
                   color: 'var(--text-secondary)', 
                   textDecoration: 'none' 
                 }}>
-                  Contact Us
+                  Επικοινωνία
                 </a>
               </li>
               <li style={{ marginBottom: '12px' }}>
@@ -98,7 +106,7 @@ const Footer = () => {
                   color: 'var(--text-secondary)', 
                   textDecoration: 'none' 
                 }}>
-                  Shipping & Returns
+                  Αποστολή & Επιστροφές
                 </a>
               </li>
               <li style={{ marginBottom: '12px' }}>
@@ -106,7 +114,7 @@ const Footer = () => {
                   color: 'var(--text-secondary)', 
                   textDecoration: 'none' 
                 }}>
-                  FAQ
+                  Συχνές Ερωτήσεις
                 </a>
               </li>
               <li style={{ marginBottom: '12px' }}>
@@ -114,7 +122,7 @@ const Footer = () => {
                   color: 'var(--text-secondary)', 
                   textDecoration: 'none' 
                 }}>
-                  Terms & Conditions
+                  Όροι & Προϋποθέσεις
                 </a>
               </li>
             </ul>
@@ -122,30 +130,30 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="heading-3" style={{ marginBottom: '20px' }}>Contact</h4>
+            <h4 className="heading-3" style={{ marginBottom: '20px' }}>Επικοινωνία</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               <li style={{ marginBottom: '12px', display: 'flex', gap: '8px' }}>
                 <MapPin size={16} style={{ color: 'var(--text-secondary)', flexShrink: 0, marginTop: '2px' }} />
                 <span className="body-small" style={{ color: 'var(--text-secondary)' }}>
-                  123 Wine Street, Vineyards District
+                  Οδός Κρασιών 123, Αθήνα
                 </span>
               </li>
               <li style={{ marginBottom: '12px', display: 'flex', gap: '8px', alignItems: 'center' }}>
                 <Phone size={16} style={{ color: 'var(--text-secondary)', flexShrink: 0 }} />
-                <a href="tel:+1234567890" className="body-small" style={{ 
+                <a href="tel:+302101234567" className="body-small" style={{ 
                   color: 'var(--text-secondary)', 
                   textDecoration: 'none' 
                 }}>
-                  +1 (234) 567-890
+                  +30 210 123 4567
                 </a>
               </li>
               <li style={{ marginBottom: '12px', display: 'flex', gap: '8px', alignItems: 'center' }}>
                 <Mail size={16} style={{ color: 'var(--text-secondary)', flexShrink: 0 }} />
-                <a href="mailto:hello@wineacademy.com" className="body-small" style={{ 
+                <a href="mailto:info@wineacademy.gr" className="body-small" style={{ 
                   color: 'var(--text-secondary)', 
                   textDecoration: 'none' 
                 }}>
-                  hello@wineacademy.com
+                  info@wineacademy.gr
                 </a>
               </li>
             </ul>
@@ -163,10 +171,10 @@ const Footer = () => {
           gap: '16px'
         }}>
           <p className="body-small" style={{ color: 'var(--text-light)' }}>
-            © 2025 Wine Academy. All rights reserved.
+            © 2025 Wine Academy. Όλα τα δικαιώματα διατηρούνται.
           </p>
           <p className="body-small" style={{ color: 'var(--text-light)' }}>
-            Please drink responsibly. You must be 21+ to purchase.
+            Παρακαλούμε πίνετε υπεύθυνα. Πρέπει να είστε 18+ για αγορά.
           </p>
         </div>
       </div>

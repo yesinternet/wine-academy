@@ -3,23 +3,23 @@ import { featuredProducts } from '../data/mock';
 
 const FeaturedProducts = () => {
   return (
-    <section className="section-padding" style={{ background: 'var(--bg-primary)' }}>
+    <section className="section-padding" style={{ background: '#ffffff' }}>
       <div className="container">
         <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-          <h2 className="hero-medium">Featured Selection</h2>
+          <h2 className="hero-medium">Προτεινόμενα Προϊόντα</h2>
           <p className="body-large" style={{ color: 'var(--text-secondary)', marginTop: '16px' }}>
-            Handpicked bottles that exemplify quality and craftsmanship
+            Επιλεγμένες φιάλες που ξεχωρίζουν για την ποιότητα και τη δεξιοτεχνία τους
           </p>
         </div>
 
         <div className="grid-product-showcase">
           {featuredProducts.map((product) => (
-            <div key={product.id} className="product-card hover-lift">
+            <div key={product.id} className="product-card hover-lift" style={{ background: '#ffffff', border: '1px solid var(--border-light)' }}>
               <img 
                 src={`${product.image}?auto=compress&cs=tinysrgb&w=400`}
                 alt={product.name}
                 className="product-card-image"
-                style={{ height: '280px' }}
+                style={{ height: '280px', objectFit: 'contain', padding: '20px', background: '#ffffff' }}
               />
               <div style={{ padding: '16px' }}>
                 <p className="body-small" style={{ 
@@ -43,12 +43,12 @@ const FeaturedProducts = () => {
                   paddingTop: '16px',
                   borderTop: '1px solid var(--border-light)'
                 }}>
-                  <span className="heading-3">${product.price}</span>
+                  <span className="heading-3">€{product.price}</span>
                   <button 
                     className="btn-secondary"
                     style={{ padding: '8px 16px' }}
                   >
-                    Add to Cart
+                    Προσθήκη
                   </button>
                 </div>
               </div>

@@ -7,15 +7,15 @@ const Categories = () => {
     <section className="section-padding" style={{ background: 'var(--bg-secondary)' }}>
       <div className="container">
         <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-          <h2 className="hero-medium">Shop by Category</h2>
+          <h2 className="hero-medium">Αγοράστε ανά Κατηγορία</h2>
           <p className="body-large" style={{ color: 'var(--text-secondary)', marginTop: '16px' }}>
-            Explore our carefully curated collections
+            Εξερευνήστε τις επιμελημένες συλλογές μας
           </p>
         </div>
 
         <div className="grid-product-showcase">
           {categories.map((category) => (
-            <div key={category.id} className="product-card hover-lift">
+            <div key={category.id} className="product-card hover-lift" style={{ background: '#ffffff' }}>
               <img 
                 src={`${category.image}?auto=compress&cs=tinysrgb&w=400`}
                 alt={category.name}
@@ -33,7 +33,7 @@ const Categories = () => {
                   {category.productCount}
                 </p>
                 <button className="btn-icon">
-                  Browse Collection
+                  Δείτε τη Συλλογή
                   <ArrowRight size={12} />
                 </button>
               </div>
