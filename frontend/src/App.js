@@ -13,6 +13,8 @@ import BlogSection from "@/components/BlogSection";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 import AgeVerification from "@/components/AgeVerification";
+import CategoryPage from "@/components/CategoryPage";
+import ProductDetailsPage from "@/components/ProductDetailsPage";
 
 const Home = () => {
   return (
@@ -40,8 +42,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/category/wine" element={<CategoryPage />} />
+          <Route path="/product/:id" element={<ProductDetailsPage />} />
         </Routes>
       </BrowserRouter>
+      <Toaster position="top-right" />
     </div>
   );
 }

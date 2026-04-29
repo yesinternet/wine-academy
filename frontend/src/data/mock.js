@@ -35,6 +35,19 @@ export const allWineProducts = [
     price: 849.99,
     image: "https://images.unsplash.com/photo-1611571940159-425a28706d6f",
     description: "Premier Grand Cru Classé από το Bordeaux",
+    longDescription: "Το Château Margaux 2015 είναι ένα εξαιρετικό Premier Grand Cru Classé κρασί από τη περιοχή Bordeaux της Γαλλίας. Αυτή η εξαιρετική χρονιά προσφέρει μια αρμονική ισορροπία μεταξύ φρουτώδους χαρακτήρα και δομημένων τανινών. Στη μύτη αναδύονται νότες μαύρου κερασιού, βατόμουρου και λεπτές αποχρώσεις γλυκάνισου και κέδρου.",
+    images: [
+      "https://images.unsplash.com/photo-1611571940159-425a28706d6f",
+      "https://images.unsplash.com/photo-1586370434639-0fe43b2d32d6",
+      "https://images.unsplash.com/photo-1584916201218-f4242ceb4809",
+      "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3"
+    ],
+    volume: "750ml",
+    alcohol: "13.5%",
+    vintage: "2015",
+    grapes: "Cabernet Sauvignon, Merlot, Cabernet Franc",
+    temperature: "16-18°C",
+    pairings: "Κόκκινα κρέατα, Άγριο κυνήγι, Ώριμα τυριά",
     inStock: true
   },
   {
@@ -47,6 +60,18 @@ export const allWineProducts = [
     price: 124.99,
     image: "https://images.pexels.com/photos/4710897/pexels-photo-4710897.jpeg",
     description: "Κομψό Nebbiolo από το Piedmont",
+    longDescription: "Το Barolo Riserva 2016 είναι ένα κλασικό κρασί από την περιοχή Piedmont της Ιταλίας. Παράγεται από 100% σταφύλια Nebbiolo και έχει ωριμάσει για τουλάχιστον 5 χρόνια. Προσφέρει πλούσιες νότες κερασιού, τριαντάφυλλου, τρούφας και δέρματος.",
+    images: [
+      "https://images.pexels.com/photos/4710897/pexels-photo-4710897.jpeg",
+      "https://images.unsplash.com/photo-1586370434639-0fe43b2d32d6",
+      "https://images.unsplash.com/photo-1584916201218-f4242ceb4809"
+    ],
+    volume: "750ml",
+    alcohol: "14%",
+    vintage: "2016",
+    grapes: "Nebbiolo",
+    temperature: "18-20°C",
+    pairings: "Μπριζόλες, Πικάντικα φαγητά, Τρούφες",
     inStock: true
   },
   {
