@@ -111,7 +111,7 @@ Build an elegant and modern Greek-language homepage for Wine Academy, an online 
     - All products link to detail pages
     - White background, luxury minimalist design
 
-14. **Product Details Page (`/product/:id`) ✨ NEW**
+14. **Product Details Page (`/product/:id`) ✨**
     - **Image Gallery:**
       * Main product image display (500px height)
       * Thumbnail navigation (up to 4 images)
@@ -148,6 +148,55 @@ Build an elegant and modern Greek-language homepage for Wine Academy, an online 
       * Elegant typography (Playfair Display + Inter)
       * Luxury minimalist aesthetic
       * Responsive layout
+
+15. **About Us Page (`/about`) ✨ NEW**
+    - **Hero Section:**
+      * Full-width background image with gradient overlay
+      * "Η Ιστορία Μας" heading (56px Playfair Display)
+      * Brand story introduction paragraph
+      * White text on dark background
+    - **Mission Section:**
+      * Two-column layout (image + text)
+      * Wine cellar imagery
+      * "Η Αποστολή Μας" content
+      * Detailed company philosophy
+    - **Values Section:**
+      * 4-column grid on beige background
+      * Each value card includes:
+        - Icon (Award, Users, Heart, Wine)
+        - Title
+        - Description
+      * Values: Ποιότητα, Καθοδήγηση, Πάθος, Συλλογή
+      * White cards with hover lift effect
+    - **Timeline Section:**
+      * "Το Ταξίδι Μας" vertical timeline
+      * 4 milestones: 2010 (Η Αρχή), 2015 (Επέκταση), 2020 (Ψηφιακή Παρουσία), 2025 (Σήμερα)
+      * Year + Title + Description for each
+      * Vertical line connecting timeline dots
+      * Clean white background
+    - **Why Choose Us Section:**
+      * Two-column layout (content + image)
+      * Beige background
+      * 3 benefits with icons:
+        - Βραβευμένη Συλλογή
+        - Παγκόσμια Δίκτυα
+        - Γρήγορη Παράδοση
+      * Wine tasting imagery
+    - **CTA Section:**
+      * Dark background (#2c2c2c)
+      * "Ξεκινήστε το Δικό Σας Ταξίδι" heading
+      * Two CTA buttons:
+        - "Δείτε τη Συλλογή" (primary, links to /category/wine)
+        - "Επικοινωνήστε Μαζί Μας" (secondary)
+    - **Navigation:**
+      * Accessible via ΣΧΕΤΙΚΑ menu link
+      * Breadcrumbs: Αρχική > Σχετικά με εμάς
+    - **Design:**
+      * Mix of white and beige backgrounds
+      * High-quality lifestyle imagery
+      * Luxury minimalist aesthetic
+      * Playfair Display for headings
+      * Consistent spacing and typography
 
 ### Design Implementation
 - **White Background Strategy:**
@@ -205,12 +254,13 @@ Build an elegant and modern Greek-language homepage for Wine Academy, an online 
 8. ✅ White backgrounds for multiple sections - COMPLETED
 9. ✅ Category Page with filters and sorting - COMPLETED
 10. ✅ Product Details Page - COMPLETED
-11. 🔜 Shopping Cart functionality (next priority)
-12. 🔜 Checkout flow
-13. Backend API development (products, categories, cart, auth, blog, newsletter)
-14. Database schema for MongoDB
-15. Frontend-backend integration
-16. Greek language admin panel
+11. ✅ About Us Page - COMPLETED
+12. 🔜 Shopping Cart functionality (next priority)
+13. 🔜 Checkout flow
+14. Backend API development (products, categories, cart, auth, blog, newsletter)
+15. Database schema for MongoDB
+16. Frontend-backend integration
+17. Greek language admin panel
 
 ## Technical Notes
 - All UI text in Greek (Ελληνικά)

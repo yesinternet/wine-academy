@@ -283,7 +283,7 @@ export const navigationMenu = [
   {
     id: 5,
     label: "ΣΧΕΤΙΚΑ",
-    href: "/#about",
+    href: "/about",
     submenu: []
   }
 ];

@@ -15,6 +15,7 @@ import Footer from "@/components/Footer";
 import AgeVerification from "@/components/AgeVerification";
 import CategoryPage from "@/components/CategoryPage";
 import ProductDetailsPage from "@/components/ProductDetailsPage";
+import AboutUsPage from "@/components/AboutUsPage";
 
 const Home = () => {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/category/wine" element={<CategoryPage />} />
           <Route path="/product/:id" element={<ProductDetailsPage />} />
+          <Route path="/about" element={<AboutUsPage />} />
         </Routes>
       </BrowserRouter>
       <Toaster position="top-right" />
