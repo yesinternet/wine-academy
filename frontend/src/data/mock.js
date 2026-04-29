@@ -24,111 +24,241 @@ export const heroSlides = [
   }
 ];
 
-export const featuredProducts = [
+export const allWineProducts = [
   {
     id: 1,
     name: "Château Margaux 2015",
     category: "Κρασί",
+    type: "Κόκκινο",
+    country: "Γαλλία",
+    region: "Bordeaux",
     price: 849.99,
     image: "https://images.unsplash.com/photo-1611571940159-425a28706d6f",
-    description: "Premier Grand Cru Classé από το Bordeaux"
+    description: "Premier Grand Cru Classé από το Bordeaux",
+    inStock: true
   },
   {
     id: 2,
-    name: "Macallan 18 Year",
-    category: "Ουίσκι",
-    price: 299.99,
-    image: "https://images.unsplash.com/photo-1746422029290-874f805d2348",
-    description: "Single Malt Scotch Whisky με πλούσιες νότες"
+    name: "Barolo Riserva 2016",
+    category: "Κρασί",
+    type: "Κόκκινο",
+    country: "Ιταλία",
+    region: "Piedmont",
+    price: 124.99,
+    image: "https://images.pexels.com/photos/4710897/pexels-photo-4710897.jpeg",
+    description: "Κομψό Nebbiolo από το Piedmont",
+    inStock: true
   },
   {
     id: 3,
-    name: "Champagne Brut Réserve",
-    category: "Σαμπάνια",
-    price: 89.99,
-    image: "https://images.unsplash.com/photo-1756892924483-30637271e385",
-    description: "Εκλεπτυσμένη σαμπάνια για ιδιαίτερες στιγμές"
+    name: "Chardonnay Reserve 2020",
+    category: "Κρασί",
+    type: "Λευκό",
+    country: "ΗΠΑ",
+    region: "Napa Valley",
+    price: 68.99,
+    image: "https://images.unsplash.com/photo-1642189941430-7073f85d7140",
+    description: "Πλούσιο Chardonnay με νότες βανίλιας",
+    inStock: true
   },
   {
     id: 4,
-    name: "Hendrick's Gin",
-    category: "Ποτά",
+    name: "Sancerre Blanc 2021",
+    category: "Κρασί",
+    type: "Λευκό",
+    country: "Γαλλία",
+    region: "Loire",
     price: 42.99,
-    image: "https://images.unsplash.com/photo-1746422029245-f3d4384d1acc",
-    description: "Gin με άρωμα αγγουριού και ροδοπέταλων"
+    image: "https://images.unsplash.com/photo-1642189941430-7073f85d7140",
+    description: "Φρέσκο Sauvignon Blanc με εσπεριδοειδή",
+    inStock: true
   },
   {
     id: 5,
-    name: "Barolo Riserva 2016",
+    name: "Champagne Brut Réserve",
     category: "Κρασί",
-    price: 124.99,
-    image: "https://images.pexels.com/photos/4710897/pexels-photo-4710897.jpeg",
-    description: "Κομψό Nebbiolo από το Piedmont"
+    type: "Αφρώδες",
+    country: "Γαλλία",
+    region: "Champagne",
+    price: 89.99,
+    image: "https://images.pexels.com/photos/5379748/pexels-photo-5379748.jpeg",
+    description: "Εκλεπτυσμένη σαμπάνια για ιδιαίτερες στιγμές",
+    inStock: true
   },
   {
     id: 6,
-    name: "Yamazaki 12 Year",
-    category: "Ουίσκι",
-    price: 189.99,
-    image: "https://images.unsplash.com/photo-1543512214-7f42e72800aa",
-    description: "Ιαπωνικό Single Malt με βαρέλια mizunara"
+    name: "Prosecco DOC",
+    category: "Κρασί",
+    type: "Αφρώδες",
+    country: "Ιταλία",
+    region: "Veneto",
+    price: 24.99,
+    image: "https://images.pexels.com/photos/5379748/pexels-photo-5379748.jpeg",
+    description: "Ελαφρύ και φρέσκο Prosecco",
+    inStock: true
+  },
+  {
+    id: 7,
+    name: "Pinot Noir 2019",
+    category: "Κρασί",
+    type: "Κόκκινο",
+    country: "Νέα Ζηλανδία",
+    region: "Central Otago",
+    price: 54.99,
+    image: "https://images.unsplash.com/photo-1611571940159-425a28706d6f",
+    description: "Μεταξένιο Pinot Noir με νότες κερασιού",
+    inStock: true
+  },
+  {
+    id: 8,
+    name: "Assyrtiko Santorini 2022",
+    category: "Κρασί",
+    type: "Λευκό",
+    country: "Ελλάδα",
+    region: "Σαντορίνη",
+    price: 38.99,
+    image: "https://images.unsplash.com/photo-1642189941430-7073f85d7140",
+    description: "Ελληνικό Assyrtiko με ορυκτότητα",
+    inStock: true
+  },
+  {
+    id: 9,
+    name: "Cabernet Sauvignon 2018",
+    category: "Κρασί",
+    type: "Κόκκινο",
+    country: "Χιλή",
+    region: "Maipo Valley",
+    price: 32.99,
+    image: "https://images.unsplash.com/photo-1611571940159-425a28706d6f",
+    description: "Γεμάτο σώμα με νότες μαύρων φρούτων",
+    inStock: true
+  },
+  {
+    id: 10,
+    name: "Riesling Spätlese 2020",
+    category: "Κρασί",
+    type: "Λευκό",
+    country: "Γερμανία",
+    region: "Mosel",
+    price: 45.99,
+    image: "https://images.unsplash.com/photo-1642189941430-7073f85d7140",
+    description: "Αρωματικό Riesling με ισορροπία γλυκύτητας",
+    inStock: true
+  },
+  {
+    id: 11,
+    name: "Malbec Reserve 2019",
+    category: "Κρασί",
+    type: "Κόκκινο",
+    country: "Αργεντινή",
+    region: "Mendoza",
+    price: 48.99,
+    image: "https://images.unsplash.com/photo-1611571940159-425a28706d6f",
+    description: "Πλούσιο Malbec με βελούδινες τανίνες",
+    inStock: true
+  },
+  {
+    id: 12,
+    name: "Rosé de Provence 2022",
+    category: "Κρασί",
+    type: "Ροζέ",
+    country: "Γαλλία",
+    region: "Provence",
+    price: 28.99,
+    image: "https://images.unsplash.com/photo-1642189941430-7073f85d7140",
+    description: "Δροσερό ροζέ με νότες φράουλας",
+    inStock: true
   }
+];
+
+export const featuredProducts = allWineProducts.slice(0, 6);
+
+export const filterOptions = {
+  wineTypes: [
+    { id: 1, label: "Κόκκινο", value: "Κόκκινο" },
+    { id: 2, label: "Λευκό", value: "Λευκό" },
+    { id: 3, label: "Ροζέ", value: "Ροζέ" },
+    { id: 4, label: "Αφρώδες", value: "Αφρώδες" }
+  ],
+  countries: [
+    { id: 1, label: "Ελλάδα", value: "Ελλάδα" },
+    { id: 2, label: "Γαλλία", value: "Γαλλία" },
+    { id: 3, label: "Ιταλία", value: "Ιταλία" },
+    { id: 4, label: "ΗΠΑ", value: "ΗΠΑ" },
+    { id: 5, label: "Ισπανία", value: "Ισπανία" },
+    { id: 6, label: "Άλλες Χώρες", value: "other" }
+  ],
+  priceRanges: [
+    { id: 1, label: "Κάτω από 30€", min: 0, max: 30 },
+    { id: 2, label: "30€ - 50€", min: 30, max: 50 },
+    { id: 3, label: "50€ - 100€", min: 50, max: 100 },
+    { id: 4, label: "100€ - 200€", min: 100, max: 200 },
+    { id: 5, label: "Πάνω από 200€", min: 200, max: 99999 }
+  ]
+};
+
+export const sortOptions = [
+  { id: 1, label: "Δημοφιλότητα", value: "popularity" },
+  { id: 2, label: "Τιμή: Χαμηλή σε Υψηλή", value: "price_asc" },
+  { id: 3, label: "Τιμή: Υψηλή σε Χαμηλή", value: "price_desc" },
+  { id: 4, label: "Νεότερα Πρώτα", value: "newest" },
+  { id: 5, label: "Όνομα: A-Z", value: "name_asc" }
 ];
 
 export const navigationMenu = [
   {
     id: 1,
     label: "ΚΡΑΣΙ",
-    href: "#wine",
+    href: "/category/wine",
     submenu: [
-      { label: "Λευκό Κρασί", href: "#white-wine" },
-      { label: "Ροζέ Κρασί", href: "#rose-wine" },
-      { label: "Κόκκινο Κρασί", href: "#red-wine" },
-      { label: "Γλυκό Κρασί - Επιδόρπιο", href: "#dessert-wine" },
-      { label: "Ενισχυμένο Κρασί - Πόρτο - Sherry", href: "#fortified-wine" },
-      { label: "Αφρώδη - Σαμπάνια", href: "#sparkling-wine" }
+      { label: "Λευκό Κρασί", href: "/category/wine?type=white" },
+      { label: "Ροζέ Κρασί", href: "/category/wine?type=rose" },
+      { label: "Κόκκινο Κρασί", href: "/category/wine?type=red" },
+      { label: "Γλυκό Κρασί - Επιδόρπιο", href: "/category/wine?type=dessert" },
+      { label: "Ενισχυμένο Κρασί - Πόρτο - Sherry", href: "/category/wine?type=fortified" },
+      { label: "Αφρώδη - Σαμπάνια", href: "/category/wine?type=sparkling" }
     ]
   },
   {
     id: 2,
     label: "DELICATESSEN",
-    href: "#deli",
+    href: "/category/deli",
     submenu: []
   },
   {
     id: 3,
     label: "ΠΟΤΟ",
-    href: "#spirits",
+    href: "/category/spirits",
     submenu: [
-      { label: "Ούίσκι", href: "#whisky" },
-      { label: "Βότκα", href: "#vodka" },
-      { label: "Ρούμι - Cachaca", href: "#rum" },
-      { label: "Τεκίλα - Mezcal", href: "#tequila" },
-      { label: "Τζιν", href: "#gin" },
-      { label: "Κονιάκ - Μπράντυ", href: "#cognac" },
-      { label: "ΜΕΤΑΞΑ", href: "#metaxa" },
-      { label: "Βερμούτ - Aperitivo", href: "#vermouth" },
-      { label: "Λικέρ", href: "#liqueur" },
-      { label: "Bitters", href: "#bitters" },
-      { label: "Για Κοκτέιλ", href: "#cocktails" }
+      { label: "Ούίσκι", href: "/category/spirits?type=whisky" },
+      { label: "Βότκα", href: "/category/spirits?type=vodka" },
+      { label: "Ρούμι - Cachaca", href: "/category/spirits?type=rum" },
+      { label: "Τεκίλα - Mezcal", href: "/category/spirits?type=tequila" },
+      { label: "Τζιν", href: "/category/spirits?type=gin" },
+      { label: "Κονιάκ - Μπράντυ", href: "/category/spirits?type=cognac" },
+      { label: "ΜΕΤΑΞΑ", href: "/category/spirits?type=metaxa" },
+      { label: "Βερμούτ - Aperitivo", href: "/category/spirits?type=vermouth" },
+      { label: "Λικέρ", href: "/category/spirits?type=liqueur" },
+      { label: "Bitters", href: "/category/spirits?type=bitters" },
+      { label: "Για Κοκτέιλ", href: "/category/spirits?type=cocktails" }
     ]
   },
   {
     id: 4,
     label: "ΑΠΟΣΤΑΓΜΑ",
-    href: "#distillates",
+    href: "/category/distillates",
     submenu: [
-      { label: "Ούζο", href: "#ouzo" },
-      { label: "Τσίπουρο", href: "#tsipouro" },
-      { label: "Grappa", href: "#grappa" },
-      { label: "Sake", href: "#sake" },
-      { label: "Άλλα Αποστάγματα", href: "#other-distillates" }
+      { label: "Ούζο", href: "/category/distillates?type=ouzo" },
+      { label: "Τσίπουρο", href: "/category/distillates?type=tsipouro" },
+      { label: "Grappa", href: "/category/distillates?type=grappa" },
+      { label: "Sake", href: "/category/distillates?type=sake" },
+      { label: "Άλλα Αποστάγματα", href: "/category/distillates?type=other" }
     ]
   },
   {
     id: 5,
     label: "ΣΧΕΤΙΚΑ",
-    href: "#about",
+    href: "/#about",
     submenu: []
   }
 ];
